@@ -1,0 +1,37 @@
+label,
+input,
+button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 10px;
+    /* box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white; */
+}
+
+button {
+    color: black;
+    margin-top: 30px;
+    background: #b1e2de;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    /* box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white; */
+    transition: 0.5s;
+}
+
+.example-card{
+    background-color: white;
+    
+}

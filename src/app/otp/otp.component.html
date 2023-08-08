@@ -1,0 +1,24 @@
+<div class="container" style="padding-top: 12rem;">
+    <mat-card class="example-card" style="width: fit-content; margin: auto;">
+        <div class="p-5">
+            <div class="brand-logo text-center">
+                <img src="assets/img/logo.png" alt="" class="img-fluid logo">
+            </div>
+            <h1 class="txt3">Verify OTP</h1>
+            <h3 class="txt4">Enter OTP</h3>
+            <div class="inputs mt-3">
+                <div class="otpinputs">
+                    <input class="otpbox" #otp1 required maxLength="1" (keyup)="move($event, '', otp1, otp2)"
+                        [(ngModel)]="otpString1" type="tel" autofocus/>
+                    <input class="otpbox" #otp2 required maxLength="1" (keyup)="move($event, otp1, otp2, otp3)"
+                        [(ngModel)]="otpString2" type="tel" />
+                    <input class="otpbox" #otp3 required maxLength="1" (keyup)="move($event, otp2, otp3, otp4)"
+                        [(ngModel)]="otpString3" type="tel" />
+                    <input class="otpbox" #otp4 required maxLength="1" (keyup)="move($event, otp3, otp4, '')"
+                        [(ngModel)]="otpString4" type="tel"  />
+                </div>
+                <button type="submit" (click)="verifyOtp()">SUBMIT</button>
+            </div>
+        </div>
+    </mat-card>
+</div>
